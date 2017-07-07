@@ -1,5 +1,8 @@
 'use strict';
 
+require('./toggle.scss');
+require('./toggle.html');
+
 module.exports = {
 	templateUrl: 'popup/components/toggle/toggle.html',
 	bindings: {

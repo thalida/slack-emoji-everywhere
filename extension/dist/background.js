@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 61);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 61:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports) {
 
 var toggle = {
@@ -144,5 +143,4 @@ events.init();
 
 
 /***/ })
-
-/******/ });
+/******/ ]);

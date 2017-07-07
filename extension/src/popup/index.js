@@ -1,23 +1,15 @@
 'use strict';
 
-// Vendors
-require('lodash');
 require('angular');
 
-// Polyfills
-require('./helpers/polyfill-object-keys.js');
-
-// Helpers
-global.requireUtils = require('./helpers/require-utils.js');
-
-console.log('popup')
-
-// App
 require('./app.scss');
-require('./app.module.js');
 
-require('./services');
-require('./components');
-require('./views');
-
-angular.module('app').constant('isPopup', true);
+angular
+.module( 'app', [
+    require('angular-animate'),
+    require('angular-touch')
+])
+.service('StorageItem', require('./services/storageItem.service.js'))
+.service('StorageCollection', require('./services/storageCollection.service.js'))
+.component('toggle', require('./components/toggle/toggle.component.js'))
+.controller('MainController', require('./controllers/main.controller.js'));

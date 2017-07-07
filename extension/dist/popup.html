@@ -5,8 +5,21 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 <link href="/dist/popup.css" rel="stylesheet"></head>
 <body>
-	<div class="app">
-		<div class="app-body" ui-view></div>
+	<div class="app" ng-controller="MainController as $ctrl">
+		<div class="header">
+		    <div class="name">
+		        <span class="weight-thin">SlackEmojiEverywhere</span>
+		    </div>
+		</div>
+
+		<div class="content">
+		    <toggle state="$ctrl.isEnabled" on-label="on" off-label="off" on-change="$ctrl.onToggleUpdate(res)"></toggle>
+		</div>
+
+		<div class="footer">
+	        WordBird is on <a href="https://github.com/thalida/WordBird" target="_blank">GitHub</a><br />
+	        Created by <a href="http://thalida.com" target="_blank">thalida</a>
+		</div>
 	</div>
 
 		<!-- script>

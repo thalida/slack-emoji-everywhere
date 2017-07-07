@@ -20,6 +20,36 @@ body {
 	width: 560px;
 }
 
+.header {
+    margin-bottom: 30px;
+    text-align: center;
+
+    .name {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 25px;
+    }
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    border-top: 1px solid $brand-gray;
+}
+
+.content {
+    .toggle-component {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .p1 {
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+}
+
 h1,
 .h1 {
 	display: block;
@@ -30,32 +60,6 @@ h1,
 	font-size: 20px;
 	font-weight: 400;
 	text-align: left;
-}
-
-h2,
-.h2 {
-	display: block;
-
-	margin: 0;
-	padding: 0;
-
-	font-size: 18px;
-	font-weight: 400;
-	text-align: left;
-}
-
-h3,
-.h3 {
-	display: block;
-
-	margin: 0;
-	padding: 0;
-
-	font-size: 16px;
-	font-weight: 400;
-	text-align: left;
-
-	color: $brand-black-faded-2;
 }
 
 a,
@@ -93,44 +97,5 @@ a,
 	}
 	&-bold {
 		font-weight: 700;
-	}
-}
-
-.formInput {
-	margin-bottom: 10px;
-
-	&-input {
-		display: block;
-		width: 200px;
-		padding: 5px 0;
-
-		border: 0;
-		border-bottom: 2px solid $brand-black-faded-2;
-		font-size: 20px;
-		font-weight: 400;
-
-		&:focus {
-			border-bottom-color: $brand-black-faded-1;
-		}
-	}
-
-	&-help {
-		display: block;
-		height: 15px;
-		width: 100%;
-		margin-top: 3px;
-
-		color: $brand-black-faded-2;
-		font-size: 12px;
-	}
-
-	&-error {
-		display: block;
-		height: 15px;
-		width: 100%;
-		margin-top: 3px;
-
-		color: $brand-red;
-		font-size: 12px;
 	}
 }

@@ -40,7 +40,7 @@ module.exports = {
                     'ngtemplate-loader?relativeTo=' + SRC + '/',
                     'html-loader',
                 ],
-                exclude: path.resolve(SRC, 'popup/popup.html')
+                exclude: path.resolve(SRC, 'popup/index.html')
             },
             {
                 test: /\.woff(2)?(\?]?.*)?$/,
@@ -60,7 +60,7 @@ module.exports = {
         new ExtractTextPlugin('[name].css'),
         new HtmlWebpackPlugin({
             chunks: ['popup'],
-            template: SRC + '/popup/popup.html',
+            template: SRC + '/popup/index.html',
             filename: 'popup.html',
             inject: true,
         }),
