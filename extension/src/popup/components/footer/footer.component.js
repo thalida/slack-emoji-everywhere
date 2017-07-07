@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	templateUrl: 'components/footer/footer.html',
+	templateUrl: 'popup/components/footer/footer.html',
 	bindings: {},
 	controller: function (){
 		var $ctrl = this;

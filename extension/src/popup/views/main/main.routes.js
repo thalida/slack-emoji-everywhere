@@ -5,7 +5,7 @@ module.exports = function( $stateProvider, $urlRouterProvider ){
 
     $stateProvider.state('main', {
         url: '/',
-        templateUrl: 'views/main/main.html',
+        templateUrl: 'popup/views/main/main.html',
         controller: 'MainController',
         controllerAs: '$ctrl'
     });

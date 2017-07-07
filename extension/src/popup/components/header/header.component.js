@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	templateUrl: 'components/header/header.html',
+	templateUrl: 'popup/components/header/header.html',
 	bindings: {},
 	controller: function (){}
 }

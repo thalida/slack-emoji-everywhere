@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	templateUrl: 'components/wordMap/wordMap.html',
+	templateUrl: 'popup/components/wordMap/wordMap.html',
 	bindings: {
 		map: '<',
 		changeCB: '&onChange'

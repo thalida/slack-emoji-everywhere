@@ -1,76 +1,22 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module build failed: Error: ENOENT: no such file or directory, open '/Users/tnoel/Repos/slack-emoji-everywhere/exten  sion/src/popup.html':
-  Error: ENOENT: no such file or directory, open '/Users/tnoel/Repos/slack-emoji-everywhere/extension/src/popup.html'
-  
-  - compiler.js:76 
-    [slack-emoji-everywhere]/[html-webpack-plugin]/lib/compiler.js:76:16
-  
-  - Compiler.js:298 Compiler.<anonymous>
-    [slack-emoji-everywhere]/[webpack]/lib/Compiler.js:298:10
-  
-  - Compiler.js:516 
-    [slack-emoji-everywhere]/[webpack]/lib/Compiler.js:516:13
-  
-  - Tapable.js:138 next
-    [slack-emoji-everywhere]/[tapable]/lib/Tapable.js:138:11
-  
-  - CachePlugin.js:62 Compiler.<anonymous>
-    [slack-emoji-everywhere]/[webpack]/lib/CachePlugin.js:62:5
-  
-  - Tapable.js:142 Compiler.applyPluginsAsyncSeries
-    [slack-emoji-everywhere]/[tapable]/lib/Tapable.js:142:13
-  
-  - Compiler.js:513 
-    [slack-emoji-everywhere]/[webpack]/lib/Compiler.js:513:10
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [slack-emoji-everywhere]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:655 self.applyPluginsAsync.err
-    [slack-emoji-everywhere]/[webpack]/lib/Compilation.js:655:19
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [slack-emoji-everywhere]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:646 self.applyPluginsAsync.err
-    [slack-emoji-everywhere]/[webpack]/lib/Compilation.js:646:11
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [slack-emoji-everywhere]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:641 self.applyPluginsAsync.err
-    [slack-emoji-everywhere]/[webpack]/lib/Compilation.js:641:10
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [slack-emoji-everywhere]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:637 sealPart2
-    [slack-emoji-everywhere]/[webpack]/lib/Compilation.js:637:9
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [slack-emoji-everywhere]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:580 Compilation.seal
-    [slack-emoji-everywhere]/[webpack]/lib/Compilation.js:580:8
-  
-  - Compiler.js:510 
-    [slack-emoji-everywhere]/[webpack]/lib/Compiler.js:510:16
-  
-  - Tapable.js:225 
-    [slack-emoji-everywhere]/[tapable]/lib/Tapable.js:225:11
-  
-  - Compilation.js:482 _addModuleChain
-    [slack-emoji-everywhere]/[webpack]/lib/Compilation.js:482:11
-  
-  - Compilation.js:453 processModuleDependencies.err
-    [slack-emoji-everywhere]/[webpack]/lib/Compilation.js:453:13
-  
-  - next_tick.js:95 _combinedTickCallback
-    internal/process/next_tick.js:95:7
-  
-  - next_tick.js:161 process._tickCallback
-    internal/process/next_tick.js:161:9
-  
-</pre><script type="text/javascript" src="/dist/popup.js"></script>
+<!doctype html>
+<html ng-app="app">
+<head>
+	<title>WordBird Settings</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link href="/dist/popup.css" rel="stylesheet"></head>
+<body>
+	<div class="app">
+		<div class="app-body" ui-view></div>
+	</div>
+
+		<!-- script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-27472040-4', 'auto');
+	  ga('send', 'pageview');
+	</script> -->
+<script type="text/javascript" src="/dist/popup.js"></script></body>
+</html>

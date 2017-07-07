@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	templateUrl: 'components/toggle/toggle.html',
+	templateUrl: 'popup/components/toggle/toggle.html',
 	bindings: {
 		onLabel: '@',
 		offLabel: '@',

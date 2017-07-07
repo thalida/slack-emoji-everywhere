@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	templateUrl: 'components/blacklist/blacklist.html',
+	templateUrl: 'popup/components/blacklist/blacklist.html',
 	bindings: {
 		list: '=',
 		changeCB: '&onChange'

@@ -2,7 +2,7 @@
 
 module.exports = {
 	require: '^wordMap',
-	templateUrl: 'components/wordMapRow/wordMapRow.html',
+	templateUrl: 'popup/components/wordMapRow/wordMapRow.html',
 	bindings: {
 		origKey: '@?key',
 		origWord: '@?word',
