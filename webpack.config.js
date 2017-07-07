@@ -11,9 +11,9 @@ const DIST =  path.join(__dirname, '/extension/dist');
 module.exports = {
     context: SRC,
     entry: {
-        background: './background.js',
-        content_script: './content_script.js',
-        popup: './popup.js',
+        background: './background',
+        content_script: './content_script',
+        popup: './popup',
     },
     output: {
         path: DIST,
